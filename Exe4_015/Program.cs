@@ -46,6 +46,9 @@ namespace Exe4_015
             Console.WriteLine("\n" + element + " pushed. ");
         }
 
-
+        public void pop()
+        {
+            Console.WriteLine("\nThe Popped Element IS: " + top.info);
+        }
     }
 }

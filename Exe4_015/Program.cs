@@ -30,7 +30,7 @@ namespace Exe4_015
 
         bool empty()
         {
-            if (top = null)
+            if (top == null)
                 return (true);
             else
                 return (false);
@@ -82,6 +82,26 @@ namespace Exe4_015
                 switch (ch)
                 {
                     case '1':
+                        Console.Write("\nEnter A Number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.push(num);
+                        break;
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\nStack Empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
                 }
             }
         }

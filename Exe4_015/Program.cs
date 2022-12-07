@@ -21,11 +21,11 @@ namespace Exe4_015
     class Program
     {
         //Aaray to be searched
-        int[] arr = new int[20];
+        int[] ammar = new int[33];
         //Number of element in the array 
-        int n;
+        int nt;
         //Get the number of elements to show in the array
-        int i;
+        int io;
 
         public void input()
         {
@@ -33,21 +33,21 @@ namespace Exe4_015
             {
                 Console.Write("Enter the number of elements in the array:");
                 string s = Console.ReadLine();
-                if ((n > 0) && (n <= 20))
+                if ((nt > 0) && (nt <= 33))
                     break;
                 else
-                    Console.WriteLine("\nArray should have minimum 1 and maximum 20 elements.\n");
+                    Console.WriteLine("\nArray should have minimum 1 and maximum 33 elements.\n");
             }
             //
             Console.WriteLine("");
             Console.WriteLine("======================");
             Console.WriteLine(" Enter Array Elements ");
             Console.WriteLine("======================");
-            for (i = 0; i < n; i++)
+            for (io = 0; io < nt; io++)
             {
-                Console.Write("<" + (i + 1) + ">");
+                Console.Write("<" + (io + 1) + ">");
                 string s1 = Console.ReadLine();
-                arr[i] = Int32.Parse(s1);
+                ammar[io] = Int32.Parse(s1);
             }
         }
     }
@@ -114,7 +114,7 @@ namespace Exe4_015
                 Console.WriteLine("4. Exit ");
                 Console.WriteLine("\nEnter Your Choice: ");
                 string sInput = Console.ReadLine();
-                char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
+                char ch = Convert.ToChar(sInput == "" ? "30" : sInput);
                 switch (ch)
                 {
                     case '1':
